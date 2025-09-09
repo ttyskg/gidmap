@@ -1,0 +1,22 @@
+[project]
+name = "gidmap"
+version = "0.1.0"
+description = "Tiny CLI to convert gene identifiers via MyGene.info"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Tatsuya Sakaguchi"}]
+dependencies = [
+"mygene>=3.2.2",
+"requests>=2.31.0",
+"requests-cache>=1.2.0"
+]
+
+
+[project.scripts]
+gidmap = "gidmap:main"
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
